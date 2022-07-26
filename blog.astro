@@ -1,0 +1,17 @@
+---
+import Base from '../layouts/Base/Base.astro'    
+// Now we want to drage our blog post from blog folder. Astro .glob allows you to search for all files.
+const posts = await Astro.glob('./blog/*.md')
+// will fetch post frontmatter properties
+console.log(posts[0].frontmatter)  
+---
+
+<Base title="About">
+    <div class="container">
+    <h2>Blog Page</h2>
+    <!--  if you want to put each post in an article e.g -->
+    {posts.map(post=>(
+        <article>{post.frontmatter.title}</article>
+    ))}
+    </div>
+</Base>
