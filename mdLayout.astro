@@ -1,0 +1,18 @@
+---
+import Base from '../Base/Base.astro';
+console.log(Astro.props)
+const {title} = Astro.props.content;
+---
+
+<!-- Now put the Base component here and define the title prop -->
+
+<Base title={title}> 
+<!--  or use shortcuts to get the title -->
+    <div class="container my-5">
+        <slot></slot>
+<h1>I am layout for MD files. This text is from md layout ===> {title}</h1>
+<p>This has become your structure for md page. you can add other html or add css here</p>
+<p>Let's put one image</p>
+<img src="./blog.png" alt="">
+</div>
+</Base>

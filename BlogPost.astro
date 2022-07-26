@@ -1,0 +1,16 @@
+---
+import Base from '../Base/Base.astro'
+// const {title,description} = Astro.props.content;
+const props = Astro.props.content;
+---
+
+<!-- Now put the Base component here and define the title prop -->
+
+<Base {...props}> 
+<!-- <Base {title} {description}>  -->
+<!--  or use shortcuts to get the title and description -->
+    <div class="container my-5">
+        <slot></slot>
+
+</div>
+</Base>
