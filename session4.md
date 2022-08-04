@@ -34,3 +34,5 @@ Video @ 34:00 minutes
 
 
 ### One last important thing he talked about how to organize your project pulling out some information and put in separate files, definitely check it out. This is how keep your frontmatter clean.  video @1:03
+
+### see how you have map function in blog.astro where you put each post in an article tag, you can make a component "Article" and make your code more clean.
