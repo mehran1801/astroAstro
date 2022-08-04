@@ -33,4 +33,4 @@ Video @ 34:00 minutes
 ### you can put sort function in js file and put export next to it and then import where you want to use sort function. keep your code clean.
 
 
-### One last important thing he talked about how to organize your project pulling out some information and put in separate files, definitely check it out.
+### One last important thing he talked about how to organize your project pulling out some information and put in separate files, definitely check it out. video @1:03
