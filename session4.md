@@ -11,3 +11,26 @@
 
 ### Next issue we are having is when we are in blog page and we click on some post, blog link is not active anymore. So what can I do if I am inside blog page internal link and still want to highlight blog navigation link. It is not working atm because we are checking the equality === in map function. so the solution is not to check equality and put some if conditions. 
 Video @ 34:00 minutes 
+
+
+
+### Let's talk about JS , it's little bit funky as far as Astro is concerned. I created new page JSTest. inside < script > tags if you console log anything , it does not show up in console until you restart server (npm run dev)
+
+## hydration means interactive, opposite of static content.
+
+### reading up on partial hydration in astro documentation. it is called "Astro Islands" now in documentation. (check nice blog here),  sometimes, client-side JavaScript is required for creating interactive UI. Instead of forcing your entire page to become an SPA-like (single page application) JavaScript application, Astro asks you to create an island.
+### Zell tried to wrtie vanilla JavaScript in script tag and he also created js file and imported it but he is running into lots of errors. so the best way is skip the vanilla js and use framework instead. He created svelte component file , check if it is configured properly in astro.config.js.  first, install its integration and any associated peer dependencies:
+
+
+### Guides ==> UI Frameworks ..read the documentation, I just noticed By default, your framework components will render as static HTML (remember you had problem.. try that too).. ok when using these components don't forget client directives. otherwise static. Can I Hydrate Astro Components? read the documentation so you know how to use script tag to send JS to browser. Essentially whatever variables you declare in script tag gets updated on DOM automatically when you call them. There is some more information about script tag in components ===> client side scripts in documentation.
+
+### Task: you should be able to import component and click on the button and it should be interactive, changing information.
+### basically you put the js in script tag and underneath used it and then call the component in the astro page making sure template directive is written next to it otherwise won't work. also explore other template directives. 
+
+
+### can you make it work in md files?
+
+### you can put sort function in js file and put export next to it and then import where you want to use sort function. keep your code clean.
+
+
+### One last important thing he talked about how to organize your project pulling out some information and put in separate files, definitely check it out.
