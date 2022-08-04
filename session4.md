@@ -28,7 +28,7 @@ Video @ 34:00 minutes
 ### basically you put the js in script tag and underneath used it and then call the component in the astro page making sure template directive is written next to it otherwise won't work. also explore other template directives. 
 
 
-### can you make it work in md files?
+### can you make it work in md files? YES I did it, so firstly you install mdx integration to install it as page, (restart the server) and then import your components not in frontmatter fence, just outside of it, and then just use in file as many times as you want, don't put template directive to keep it static.
 
 ### you can put sort function in js file and put export next to it and then import where you want to use sort function. keep your code clean.
 
