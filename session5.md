@@ -76,7 +76,7 @@ We need one astro page to put all sanity stuff otherwise it does not make any se
   
   How to use "portable text to html" in documentation. as he is trying to pull data from rich text to astro but he couldn't do it. 
   
-  
+  Searh "Sanity Plugins" . markdown e.g. if you don't want rich Text. 
   
   
   
