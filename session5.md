@@ -43,7 +43,14 @@ So whatever fields you put in sanity can be fetched like this and now you can us
 
 # How slug works ... for that just create few more posts.
 
-- better practice
+- better practice would be to create a folder in pages like 'blog' e.g , here we will use [] bracket notation to create the file. because we want to create multiple pages, In Astro documentation it is written in "Routing", read up on that, it allows you create dynamic page creation. to make that work you need to export getStaticPaths function , essentially you have to pass in various stuff, 'params' and 'props'. params will allow you create page itself. we are not passing any 'props' for now. 
+- Fetch the data here as you did before, 
+
+- Astro components that generate routes dynamically have access to an Astro.params object for each route. so just use {slug} = Astro.params;
+# svelte component giving error while building (npm run build) , so will have a look later. 
+
+after using that if you npm run build in astro project, you will see in "build" there are multiple index pages created. 
+
 
 
 
