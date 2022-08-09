@@ -68,6 +68,8 @@ We need one astro page to put all sanity stuff otherwise it does not make any se
   OK NOW Littlebit confusing part for me...
   
   ### he created another schema file (richText.js) in sanity and then added in fields of main schema (blogPost), YOU NEED to figure it out what's happening here???
+  ##### YES I have figured out something, Let's say you want to add rich text editor in your schema, so you put the code in its own file.js and then 'reference' it in other file wherever you want this appears to. watch these series of videos on sanity. 
+  ### https://www.sanity.io/docs/content-modelling
   ## However I just want to tell you that codewithHarry used "reference" schema type to link one schema to another . (figure it out.. read documentation).
   
   ### Now Zell is talking about when you used rich text editor.. how you gonna use it in html as you can access that now. video@ 47:00
