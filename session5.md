@@ -3,13 +3,13 @@
 starting with Sanity
 How to integrate sanity in your project?? and how to setup Sanity?
 
-# in the documentation --> getting started -- you make the project and use that link to install sanity, atm I have trouble installing on Mac but it is working on Windows.
+### in the documentation --> getting started -- you make the project and use that link to install sanity, atm I have trouble installing on Mac but it is working on Windows.
 
 start thinking about schema , how you are going to structure your data. 
 
 "fields" means what should be contained inside like what fields. 'type' is very important. 
 
-# after creating schema .. next step is import into schema.js and also add it.  atm I can't add second schema for some reason.
+## after creating schema .. next step is import into schema.js and also add it.  atm I can't add second schema for some reason.
 
 auto save feature in sanity, click on three dots and 'inspect', if it has 'drafts' written there .. means it is not published.  You can create content here, Also read about "schema types" in documentation. that's how you can add different fields.
 
@@ -41,7 +41,7 @@ Now in 'pages' create an astro file and in the frontmatter section import {fetch
 
 So whatever fields you put in sanity can be fetched like this and now you can use these values. make sure you have slug because you need a unique address for the post.
 
-# How slug works ... for that just create few more posts.
+## How slug works ... for that just create few more posts.
 
 - better practice would be to create a folder in pages like 'blog' e.g , here we will use [] bracket notation to create the file. because we want to create multiple pages, In Astro documentation it is written in "Routing", read up on that, it allows you create dynamic page creation. to make that work you need to export getStaticPaths function , essentially you have to pass in various stuff, 'params' and 'props'. params will allow you create page itself. we are not passing any 'props' for now. Inside this function we have to use fetch request. then use map method on that data. 
 ### using map method you need to set params value (e.g {slug:post.slug}), he also set props: {post} using map method. 
