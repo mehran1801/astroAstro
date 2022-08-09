@@ -57,7 +57,12 @@ after using that if you npm run build in astro project, you will see in "build" 
 
 # Does that work for you with slug , Can you open each page using slug address?? This is how you create the pages/files.
 
-We need one astro page to put all sanity stuff otherwise it does not make any sense. say index.astro inside sanity or/blog folder. here we will create link to all our blog posts. 
+We need one astro page to put all sanity stuff otherwise it does not make any sense. say index.astro inside sanity or/blog folder. here we will create link to all our blog posts and we wanna be able to go to that page by clicking on it. so we fetch all the data using query and 'await fetch'. This time we don't have to use getStaticPaths function. we can use map method for that to create <li>s.
+  
+  - There is one caveat , don't forget to add folder name in slug, otherwise you will have wrong href. (e.g {'sanity/' + post.slug})
+  # Are you successful in listing all the blog post in lis?
+  
+  Zell suggests in schemas create different folders and put your relevant schemas in it. 
 
 
 
