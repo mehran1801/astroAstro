@@ -51,26 +51,26 @@ save this map to a variable (e.g paths) and return it in the end.
 - Fetch the data here as you did before, you actually don't need that astro file because you are fetching posts here.
 
 - Astro components that generate routes dynamically have access to an Astro.params object for each route. so just use {slug} = Astro.params;
-# svelte component giving error while building (npm run build) , so will have a look later. 
+### svelte component giving error while building (npm run build) , so will have a look later. 
 
 after using that if you npm run build in astro project, you will see in "build" there are multiple index pages created. these pages can be accessed using slug.
 
-# Does that work for you with slug , Can you open each page using slug address?? This is how you create the pages/files.
+### Does that work for you with slug , Can you open each page using slug address?? This is how you create the pages/files.
 
 We need one astro page to put all sanity stuff otherwise it does not make any sense. say index.astro inside sanity or/blog folder. here we will create link to all our blog posts and we wanna be able to go to that page by clicking on it. so we fetch all the data using query and 'await fetch'. This time we don't have to use getStaticPaths function. we can use map method for that to create <li>s.
   
   - There is one caveat , don't forget to add folder name in slug, otherwise you will have wrong href. (e.g {'sanity/' + post.slug})
-  # Are you successful in listing all the blog post in lis?
+  ### Are you successful in listing all the blog post in lis?
   
   Zell suggests in schemas create different folders and put your relevant schemas in it. 
-# Huge confusion atm is "rich text editor" so far my understanding is content type should be richText but for now I am getting error as it is not  schema type anymore. check "block schema type".Aslo read this... https://www.sanity.io/docs/configuration
+### Huge confusion atm is "rich text editor" so far my understanding is content type should be richText but for now I am getting error as it is not  schema type anymore. check "block schema type".Aslo read this... https://www.sanity.io/docs/configuration
   
   OK NOW Littlebit confusing part for me...
   
-  # he created another schema file (richText.js) in sanity and then added in fields of main schema (blogPost), YOU NEED to figure it out what's happening here???
+  ### he created another schema file (richText.js) in sanity and then added in fields of main schema (blogPost), YOU NEED to figure it out what's happening here???
   ## However I just want to tell you that codewithHarry used "reference" schema type to link one schema to another . (figure it out.. read documentation).
   
-  # Now Zell is talking about when you used rich text editor.. how you gonna use it in html as you can access that now. video@ 47:00
+  ### Now Zell is talking about when you used rich text editor.. how you gonna use it in html as you can access that now. video@ 47:00
   
   he thinks rich text editor does not give you image option , so he created another schema figure.js (check that code for type of schema) and then just put type : figure in other schema (richText). check it out.
   
