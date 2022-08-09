@@ -63,6 +63,25 @@ We need one astro page to put all sanity stuff otherwise it does not make any se
   # Are you successful in listing all the blog post in lis?
   
   Zell suggests in schemas create different folders and put your relevant schemas in it. 
+# Huge confusion atm is "rich text editor" so far my understanding is content type should be richText but for now I am getting error as it is not  schema type anymore. check "block schema type".Aslo read this... https://www.sanity.io/docs/configuration
+  
+  OK NOW Littlebit confusing part for me...
+  
+  # he created another schema file (richText.js) in sanity and then added in fields of main schema (blogPost), YOU NEED to figure it out what's happening here???
+  ## However I just want to tell you that codewithHarry used "reference" schema type to link one schema to another . (figure it out.. read documentation).
+  
+  # Now Zell is talking about when you used rich text editor.. how you gonna use it in html as you can access that now. video@ 47:00
+  
+  he thinks rich text editor does not give you image option , so he created another schema figure.js (check that code for type of schema) and then just put type : figure in other schema (richText). check it out.
+  
+  How to use "portable text to html" in documentation. as he is trying to pull data from rich text to astro but he couldn't do it. 
+  
+  
+  
+  
+  
+  
+  
 
 
 
