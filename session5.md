@@ -88,7 +88,8 @@ We need one astro page to put all sanity stuff otherwise it does not make any se
   
 
 
-
+#### I was wondering why adding new schema does not show in content column ??? answer is it has to be 'document' type. 
+  Everything in the Studio starts with the document. A document is what you create and edit in the studio—all the other types you may define live inside the documents. In the default studio configuration, the document-types are the ones that will be listed in the content-column.
 
 
 
