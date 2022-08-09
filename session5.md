@@ -43,13 +43,22 @@ So whatever fields you put in sanity can be fetched like this and now you can us
 
 # How slug works ... for that just create few more posts.
 
-- better practice would be to create a folder in pages like 'blog' e.g , here we will use [] bracket notation to create the file. because we want to create multiple pages, In Astro documentation it is written in "Routing", read up on that, it allows you create dynamic page creation. to make that work you need to export getStaticPaths function , essentially you have to pass in various stuff, 'params' and 'props'. params will allow you create page itself. we are not passing any 'props' for now. 
-- Fetch the data here as you did before, 
+- better practice would be to create a folder in pages like 'blog' e.g , here we will use [] bracket notation to create the file. because we want to create multiple pages, In Astro documentation it is written in "Routing", read up on that, it allows you create dynamic page creation. to make that work you need to export getStaticPaths function , essentially you have to pass in various stuff, 'params' and 'props'. params will allow you create page itself. we are not passing any 'props' for now. Inside this function we have to use fetch request. then use map method on that data. 
+### using map method you need to set params value (e.g {slug:post.slug}), he also set props: {post} using map method. 
+Then you can get {slug} and {post} out from Astro.props, console log them too to check.
+save this map to a variable (e.g paths) and return it in the end. 
+- 
+- Fetch the data here as you did before, you actually don't need that astro file because you are fetching posts here.
 
 - Astro components that generate routes dynamically have access to an Astro.params object for each route. so just use {slug} = Astro.params;
 # svelte component giving error while building (npm run build) , so will have a look later. 
 
-after using that if you npm run build in astro project, you will see in "build" there are multiple index pages created. 
+after using that if you npm run build in astro project, you will see in "build" there are multiple index pages created. these pages can be accessed using slug.
+
+# Does that work for you with slug , Can you open each page using slug address?? This is how you create the pages/files.
+
+We need one astro page to put all sanity stuff otherwise it does not make any sense. say index.astro inside sanity or/blog folder. here we will create link to all our blog posts. 
+
 
 
 
