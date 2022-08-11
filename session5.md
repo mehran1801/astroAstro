@@ -75,8 +75,21 @@ We need one astro page to put all sanity stuff otherwise it does not make any se
   - However I just want to tell you that codewithHarry used "reference" schema type to link one schema to another . (figure it out.. read documentation).
   
   ### Now Zell is talking about when you used rich text editor.. how you gonna use it in html as you can access that now. video@ 47:00
+  if you console log 'post', you can see it is slightly complicated as you need to go inside 'body' to get the text you typed in rich text editor.
+  e.g post.body[0].children and from here you have to convert into html. 
+  body: [
+    {
+      _key: 'e3e255363bf2',
+      _type: 'block',
+      children: [Array],
+      markDefs: [],
+      style: 'normal'
+    }
+  ],
   
   he thinks rich text editor does not give you image option , so he created another schema figure.js (check that code for type of schema) and then just put type : figure in other schema (richText). check it out.
+  
+  ## Now the question is how to pull that Data (text and image) into html? 
   
   How to use "portable text to html" in documentation. as he is trying to pull data from rich text to astro but he couldn't do it. 
   
