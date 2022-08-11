@@ -72,7 +72,7 @@ We need one astro page to put all sanity stuff otherwise it does not make any se
   
   watch these series of videos on sanity. 
   ### https://www.sanity.io/docs/content-modelling
-  ## However I just want to tell you that codewithHarry used "reference" schema type to link one schema to another . (figure it out.. read documentation).
+  - However I just want to tell you that codewithHarry used "reference" schema type to link one schema to another . (figure it out.. read documentation).
   
   ### Now Zell is talking about when you used rich text editor.. how you gonna use it in html as you can access that now. video@ 47:00
   
