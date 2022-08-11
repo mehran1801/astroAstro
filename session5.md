@@ -97,7 +97,7 @@ We need one astro page to put all sanity stuff otherwise it does not make any se
   
   
   
-  He created couple more schemas (contact, about) and he will talk about them later. 
+  He created couple more schemas (contact, about) and he will talk about them later. because he said you can create any data in sanity, so for demonstration he created 'pages' schema and generated two pages. (more on it later).
   
 
 
